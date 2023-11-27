@@ -18,6 +18,7 @@
             <groupId>org.example</groupId>
             <artifactId>service</artifactId>
             <version>1.1-SNAPSHOT</version>
+            <type>pom</type>
         </dependency>
     </dependencies>
     <distributionManagement>
@@ -44,10 +45,25 @@
             </snapshots>
         </pluginRepository>
     </pluginRepositories>
+    <build>
+    <pluginManagement>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>3.0.1</version>
+                <configuration>
+                    <autoResolveSnapshots>1</autoResolveSnapshots>
+                </configuration>
+            </plugin>
+        </plugins>
+    </pluginManagement>
+    </build>
+
 
     <scm>
-        <connection>scm:git:https://github.com/jouini1311/service.git</connection>
-        <developerConnection>scm:git:https://github.com/jouini1311/service.git</developerConnection>
+        <connection>scm:git:https://github.com/jouini1311/front.git</connection>
+        <developerConnection>scm:git:https://github.com/jouini1311/front.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 </project>
