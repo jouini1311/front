@@ -59,7 +59,7 @@
                         </goals>
                         <configuration>
                             <configuration>
-                                <autoResolveSnapshots>1</autoResolveSnapshots>
+                                <autoResolveSnapshots>0</autoResolveSnapshots>
                             </configuration>
                         </configuration>
                     </execution>
